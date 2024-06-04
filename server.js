@@ -8,7 +8,7 @@ const signupRoutes = require("./routes/signup");
 const loginRoutes = require("./routes/login");
 const bookRoutes = require("./routes/bookRoutes")
 
-const {jwtAuthMiddleware} = require('../server/jwt');
+const {jwtAuthMiddleware} = require("../server/jwt");
 
 // database connection
 connection();
