@@ -17,6 +17,11 @@ connection();
 app.use(express.json());
 app.use(cors());
 
+app.use("/", (req,res) => {
+    res.send("Welcome to Bookstore API");
+})
+
+
 // routes
 app.use("/api/signup", signupRoutes);
 app.use("/api/login", loginRoutes);
